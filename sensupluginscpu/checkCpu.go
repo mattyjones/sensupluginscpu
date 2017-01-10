@@ -40,7 +40,7 @@ func ReadProc() []*CPUData {
 		syslogLog.WithFields(logrus.Fields{
 			"check":   "sensupluginscpu",
 			"client":  host,
-			"version": "foo",
+			//"version": "foo",
 			"error":   err,
 		}).Error("ReadProc() could not read " + statFile)
 		sensuutil.Exit("RUNTIMEERROR")
